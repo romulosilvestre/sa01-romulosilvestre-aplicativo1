@@ -18,10 +18,12 @@ public class Principal { //classe
 		JOptionPane.showMessageDialog(null,cbo.somar(valor1,valor2));		
 		String resp1 = JOptionPane.showInputDialog("Digite o fat. Jan");
 		String resp2 = JOptionPane.showInputDialog("Digite o fat. Fev");
+		String resp3 = JOptionPane.showInputDialog("Digite o fat. Mar");
 		double valorJan = Double.parseDouble(resp1);
 		double valorFev = Double.parseDouble(resp2);
-		JOptionPane.showMessageDialog(null,"Média Bimestral Fat:"+cbo.calcularMedia(valorJan, valorFev));	
+		double valorMar = Double.parseDouble(resp3);		
+		JOptionPane.showMessageDialog(null,"Média Trimestral Fat:"+cbo.calcularMedia(valorJan,valorFev,valorMar));	
 
 	} //chave que fecha - fim
 
-}
+};
