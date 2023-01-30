@@ -1,10 +1,12 @@
-package br.com.senaitagua.sa1.app1;
+package br.com.senaitagua.sa1.app1; //pacote
 import javax.swing.JOptionPane;
 
 import br.com.senaitagua.sa1.bo.CalculoBO;
-public class Principal {
+public class Principal { //classe
 
-	public static void main(String[] args) {
+	//método main - é um método principal para executar o programa.
+	public static void main(String[] args) { // chave que abre - inicio
+		
 		// TODO Auto-generated method stub
 		double valor1,valor2;
 		JOptionPane.showMessageDialog(null,"Empresa Voe - Grupo Empresarial");
@@ -19,8 +21,8 @@ public class Principal {
 		//utilizar o objeto
 		
 		
-		JOptionPane.showMessageDialog(null,cbo.Somar(valor1,valor2));
+		JOptionPane.showMessageDialog(null,cbo.somar(valor1,valor2));
 
-	}
+	} //chave que fecha - fim
 
 }
